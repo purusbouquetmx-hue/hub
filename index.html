@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Universo | Purus & Lumina</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- PANTALLA CINEMATOGRÁFICA DE ENTRADA -->
+    <div class="splash-screen" id="splashScreen">
+        <div class="splash-particles" id="splashParticles"></div>
+        <div class="splash-content">
+            <div class="splash-ornament top">✦</div>
+            <h1 class="splash-title">EL UNIVERSO</h1>
+            <p class="splash-subtitle">Donde la historia, el brillo y el aroma convergen</p>
+            <button class="btn-enter" id="btnEnter">
+                <span class="btn-text">INICIAR EXPERIENCIA</span>
+                <span class="btn-icon">✦</span>
+            </button>
+            <div class="splash-ornament bottom">✦</div>
+        </div>
+    </div>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="hub-container" id="hubContainer">
+        
+        <div class="ambient-bg"></div>
+        <div class="particles" id="particles"></div>
+
+        <header class="hub-header fade-in">
+            <span class="hub-tagline">Tres mundos. Una esencia.</span>
+            <h2 class="hub-main-title">ELIGE TU DESTINO</h2>
+            <div class="title-line"></div>
+        </header>
+
+        <div class="cards-grid">
+            
+            <!-- TARJETA 1: PURORIA -->
+            <a href="https://puroria.pages.dev/" class="hub-card card-puroria" data-sound="audio/chime-water.mp3">
+                <div class="card-bg"></div>
+                <div class="card-shine"></div>
+                <div class="card-content">
+                    <span class="card-category">✦ EL ORIGEN ✦</span>
+                    <h3 class="card-title">PURORIA, LOS ORIGENES</h3>
+                    <p class="card-desc">Sumérgete en la narrativa visual. Un mundo de misterio, tradición y belleza acuática.</p>
+                    <span class="card-cta">Explorar el Mundo <i class="arrow">→</i></span>
+                </div>
+                <div class="card-glow"></div>
+            </a>
+
+            <!-- TARJETA 2: LUMINA ORIGEN -->
+            <a href="https://purusbouquetmx-hue.github.io/lumina-origen/" class="hub-card card-lumina" data-sound="audio/chime-gold.mp3">
+                <div class="card-bg"></div>
+                <div class="card-shine"></div>
+                <div class="card-content">
+                    <span class="card-category">✦ EL BRILLO ✦</span>
+                    <h3 class="card-title">LUMINA ORIGEN</h3>
+                    <p class="card-desc">Joyería de acero y oro 18K. Piezas únicas que cuentan tu historia y reflejan tu esencia.</p>
+                    <span class="card-cta">Descubrir Colección <i class="arrow">→</i></span>
+                </div>
+                <div class="card-glow"></div>
+            </a>
+
+            <!-- TARJETA 3: PURUS BOUQUET -->
+            <a href="https://purusbouquetmx-hue.github.io/purus-bouquet/" class="hub-card card-purus" data-sound="audio/chime-nature.mp3">
+                <div class="card-bg"></div>
+                <div class="card-shine"></div>
+                <div class="card-content">
+                    <span class="card-category">✦ LA ESENCIA ✦</span>
+                    <h3 class="card-title">PURUS BOUQUET</h3>
+                    <p class="card-desc">Perfumería artesanal y arte 3D. Fragancias que honran la tradición y capturan el alma.</p>
+                    <span class="card-cta">Sentir el Aroma <i class="arrow">→</i></span>
+                </div>
+                <div class="card-glow"></div>
+            </a>
+
+        </div>
+
+        <!-- Botón de Regreso a Inicio (BLINDADO) -->
+        <button class="home-btn" id="homeBtn" title="Volver al inicio">
+            <span class="home-icon">⌂</span>
+            <span class="home-text">INICIO</span>
+        </button>
+
+        <!-- Botón de Silencio -->
+        <button class="mute-btn" id="muteBtn" title="Silenciar/Activar sonido">
+            <span id="muteIcon">🔊</span>
+        </button>
+
+        <!-- Audio Ambiental -->
+        <audio id="bgMusic" loop preload="auto">
+            <source src="audio/ambient-universe.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="hoverSound" preload="auto"></audio>
+
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
