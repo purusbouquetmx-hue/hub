@@ -1,10 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>El Universo | Purus & Lumina</title>
 
     <!-- HOJA DE ESTILOS -->
@@ -15,20 +13,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
 
-    <!-- FAVICON - PURUS & LUMINA -->
+    <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="images/faviconv2.ico">
     <link rel="icon" type="image/x-icon" sizes="32x32" href="images/favicon32.ico">
     <link rel="icon" type="image/x-icon" sizes="16x16" href="images/favicon16.ico">
     <link rel="icon" type="image/x-icon" sizes="192x192" href="images/favicon192.ico">
-
-    <!-- ICONO PARA DISPOSITIVOS APPLE -->
-    <!-- Agregar únicamente cuando exista el archivo PNG correspondiente -->
-    <!-- <link rel="apple-touch-icon" sizes="180x180" href="./image/favicon180.png"> -->
-
 </head>
 <body>    
-
-    
 
     <!-- PANTALLA CINEMATOGRÁFICA DE ENTRADA -->
     <div class="splash-screen" id="splashScreen">
@@ -37,17 +28,19 @@
             <div class="splash-ornament top">✦</div>
             <h1 class="splash-title">EL UNIVERSO</h1>
             <p class="splash-subtitle">Donde la historia, el brillo y el aroma convergen</p>
-            <button class="btn-enter" id="btnEnter">
+            
+            <!-- ESTE ES TU BOTÓN REAL -->
+            <button class="btn-enter" id="btnEnter" data-sound-hover="audio/Shin02.mp3" data-sound-click="audio/click.mp3">
                 <span class="btn-text">INICIAR EXPERIENCIA</span>
                 <span class="btn-icon">✦</span>
             </button>
+            
             <div class="splash-ornament bottom">✦</div>
         </div>
     </div>
 
     <!-- CONTENIDO PRINCIPAL -->
     <main class="hub-container" id="hubContainer">
-        
         <div class="ambient-bg"></div>
         <div class="particles" id="particles"></div>
 
@@ -56,10 +49,8 @@
             <h2 class="hub-main-title">ELIGE TU DESTINO</h2>
             <div class="title-line"></div>
         </header>
-       
 
         <div class="cards-grid">
-            
             <!-- TARJETA 1: PURORIA -->
             <a href="https://puroria.pages.dev/" class="hub-card card-puroria" data-sound="audio/chime-water.mp3">
                 <div class="card-bg"></div>
@@ -98,10 +89,9 @@
                 </div>
                 <div class="card-glow"></div>
             </a>
-
         </div>
 
-        <!-- Botón de Regreso a Inicio (BLINDADO) -->
+        <!-- Botón de Regreso a Inicio -->
         <button class="home-btn" id="homeBtn" title="Volver al inicio">
             <span class="home-icon">⌂</span>
             <span class="home-text">INICIO</span>
@@ -112,14 +102,13 @@
             <span id="muteIcon">🔊</span>
         </button>
 
-        <!-- Audio Ambiental -->
+        <!-- Audio Ambiental de Fondo -->
         <audio id="bgMusic" loop preload="auto">
             <source src="audio/ambient-universe.mp3" type="audio/mpeg">
         </audio>
-        <audio id="hoverSound" preload="auto"></audio>
-
     </main>
 
+    <!-- El script se llama al final -->
     <script src="js/main.js"></script>
 </body>
 </html>

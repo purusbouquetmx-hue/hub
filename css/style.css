@@ -205,6 +205,38 @@ body {
     padding: 0 10px;
 }
 
+.btn-iniciar {
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-iniciar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.tarjeta {
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tarjeta:hover {
+  border-color: #667eea;
+  transform: scale(1.02);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+
 /* ===== CARDS GRID ===== */
 .cards-grid {
     display: grid;
@@ -236,8 +268,8 @@ body {
 
 /* Fondos específicos por tarjeta */
 .card-puroria .card-bg { background: linear-gradient(180deg, rgba(10, 25, 41, 0.7) 0%, rgba(0,0,0,0.95) 100%), url('../images/logopb.jpg') center/cover; }
-.card-lumina .card-bg { background: linear-gradient(180deg, rgba(26, 21, 16, 0.7) 0%, rgba(0,0,0,0.95) 100%), url('https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80') center/cover; }
-.card-purus .card-bg { background: linear-gradient(180deg, rgba(26, 11, 46, 0.7) 0%, rgba(0,0,0,0.95) 100%), url('https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=800&q=80') center/cover; }
+.card-lumina .card-bg { background: linear-gradient(180deg, rgba(26, 21, 16, 0.7) 0%, rgba(0,0,0,0.95) 100%), url('../images/logo-lumina.png') center/cover; }
+.card-purus .card-bg { background: linear-gradient(180deg, rgba(26, 11, 46, 0.7) 0%, rgba(0,0,0,0.95) 100%), url('../images/logo-purus.png') center/cover; }
 
 .card-bg {
     position: absolute;

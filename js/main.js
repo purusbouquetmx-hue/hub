@@ -144,3 +144,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// 1. SONIDOS PARA EL BOTÓN "INICIAR EXPERIENCIA"
+const btnEnter = document.getElementById('btnEnter');
+if (btnEnter) {
+    // Sonido al pasar el mouse (Hover)
+    btnEnter.addEventListener('mouseenter', () => {
+        const hoverSound = btnEnter.getAttribute('data-sound-hover');
+        playUISound(hoverSound, 0.6); // Volumen al 60%
+    });
+
+    // Sonido al hacer clic
+    btnEnter.addEventListener('click', () => {
+        const clickSound = btnEnter.getAttribute('data-sound-click');
+        playUISound(clickSound, 0.7); // Volumen al 70%
+    });
+}
